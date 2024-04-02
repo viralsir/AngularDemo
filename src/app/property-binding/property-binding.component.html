@@ -1,0 +1,12 @@
+<p>property-binding works!</p>
+<h1> Personal Details</h1>
+<ul [style]="style">
+  <li [innerHTML]="name"></li>
+  <li [innerHTML]="age"></li>
+</ul>
+
+<input type="button" value="normal">
+<input type="button" value="disable" disabled>
+<input type="button" value="string intropolletion" disabled="{{isdisabled}}">
+<input type="button" value="property binding" [disabled]="isdisabled">
+

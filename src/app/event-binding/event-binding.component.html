@@ -1,0 +1,39 @@
+<h1>
+     Student Info
+</h1>
+<form action="">
+<table class="table">
+  <tr>
+    <th>  Name :</th>
+    <td><input type="text" name="sname" #name> </td>
+  </tr>
+  <tr>
+    <th>
+        Maths :
+    </th>
+    <td>
+      <input type="number" name="maths" #maths>
+    </td>
+  </tr>
+  <tr>
+    <th> Science :</th>
+    <td><input type="number" name="science" #science></td>
+  </tr>
+  <tr>
+    <th>English :</th>
+    <td><input type="number" name="english" #english></td>
+  </tr>
+  <tr>
+    <th colspan="2">
+      <input type="button" class="btn btn-outline-primary" value="save" (click)="marksheet(maths,science,english)" >
+      <input type="reset" class="btn btn-info" value="clear">
+    </th>
+  </tr>
+</table>
+</form>
+<hr/>
+<h1 class="h1"> {{passOrfail}}</h1>
+<h1> {{total}}</h1>
+<h1> {{avg}}</h1>
+<h1>{{Grade}}</h1>
+
