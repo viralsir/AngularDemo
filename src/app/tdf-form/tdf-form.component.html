@@ -1,0 +1,13 @@
+<p>tdf-form works!</p>
+<form #loginformRef="ngForm"  (ngSubmit)="checkuser(loginformRef)">
+   User Name : <input type="text" name="username" ngModel required> <br/>
+   Password : <input type="password" name="password" ngModel minlength="8" required> min 8 character long <br/>
+  <input type="submit" value="login" [disabled]="loginformRef.invalid" >
+  <input type="reset" value="clear">
+
+
+</form>
+<hr/>
+<h1>valid :{{loginformRef.valid}}</h1>
+<h1>invalid :{{loginformRef.invalid}}</h1>
+<h1> {{msg}}</h1>
