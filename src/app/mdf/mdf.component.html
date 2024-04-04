@@ -1,0 +1,11 @@
+<p>mdf works!</p>
+<form [formGroup]="loginformgroup" (ngSubmit)="checkuser()" >
+   User Name : <input placeholder="username" type="text" formControlName="username" > <br/>
+  Password : <input type="password" formControlName="password"> <br/>
+
+  <input type="submit" value="login" [disabled]="loginformgroup.invalid" >
+  <input type="reset" value="clear">
+
+</form>
+<hr/>
+<h1>{{msg}}</h1>

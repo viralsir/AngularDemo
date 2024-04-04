@@ -1,0 +1,26 @@
+<p>ngif works!</p>
+
+<input type="button" [value]="title" (click)="showhide()">
+<input type="button" value="Entry" (click)="entrybtnclicked()" >
+<input type="button" value="View" (click)="viewbtnclicked()">
+<h1  *ngIf="isVisible">
+  h1 content
+</h1>
+
+<div *ngIf="entryvisible">
+  <form>
+     UserName : <input type="text" name="username"> <br/>
+    Password : <input type="password" name="password"> <br/>
+    <input type="button" value="login">
+    <input type="button" value="clear">
+  </form>
+</div>
+<div *ngIf="viewvisible">
+   <table>
+     <tr><th>UserName</th> <th>Password</th></tr>
+     <tr><td>admin</td> <th>1234</th></tr>
+     <tr><td>vimal</td><td>34343434</td></tr>
+   </table>
+</div>
+
+

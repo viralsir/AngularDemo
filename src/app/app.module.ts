@@ -9,6 +9,8 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databinding.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { TdfFormComponent } from './tdf-form/tdf-form.component';
+import { MdfComponent } from './mdf/mdf.component';
+import { NgifComponent } from './ngif/ngif.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { TdfFormComponent } from './tdf-form/tdf-form.component';
     PropertyBindingComponent,
     EventBindingComponent,
     TwoWayDatabindingComponent,
-    TdfFormComponent
+    TdfFormComponent,
+    MdfComponent,
+    NgifComponent
 
   ],
     imports: [
