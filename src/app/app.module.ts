@@ -11,6 +11,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { TdfFormComponent } from './tdf-form/tdf-form.component';
 import { MdfComponent } from './mdf/mdf.component';
 import { NgifComponent } from './ngif/ngif.component';
+import { NgForComponent } from './ng-for/ng-for.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { NgifComponent } from './ngif/ngif.component';
     TwoWayDatabindingComponent,
     TdfFormComponent,
     MdfComponent,
-    NgifComponent
+    NgifComponent,
+    NgForComponent
 
   ],
     imports: [
