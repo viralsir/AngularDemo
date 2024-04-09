@@ -1,0 +1,14 @@
+<h1> Student Entry Form </h1>
+<form [formGroup]="studententrygroup"  (ngSubmit)="entry()"  >
+  Roll No : <input type="number" formControlName="rollno"> <br/>
+  Name : <input type="text" formControlName="name"> <br/>
+  Maths : <input type="number" formControlName="maths"><br/>
+  Science : <input type="number" formControlName="science"> <br/>
+  English : <input type="number" formControlName="english"> <br/>
+  <input type="submit" value="Save" >
+  <input type="reset" value="clear">
+</form>
+<hr/>
+<h1> {{msg}}</h1>
+<hr/>
+<app-studentview></app-studentview>

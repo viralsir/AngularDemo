@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>Roll no</th><th>Name</th><th>Maths</th><th>Science</th><th>English</th>
+  </tr>
+  <tr *ngFor="let student of this.sservice.studentarray">
+    <td>{{student.rollno}}</td>
+    <td>{{student.name}}</td>
+    <td>{{student.maths}}</td>
+    <td>{{student.science}}</td>
+    <td>{{student.english}}</td>
+
+
+  </tr>
+</table>

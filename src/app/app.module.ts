@@ -12,6 +12,8 @@ import { TdfFormComponent } from './tdf-form/tdf-form.component';
 import { MdfComponent } from './mdf/mdf.component';
 import { NgifComponent } from './ngif/ngif.component';
 import { NgForComponent } from './ng-for/ng-for.component';
+import { StudententryComponent } from './studententry/studententry.component';
+import { StudentviewComponent } from './studentview/studentview.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { NgForComponent } from './ng-for/ng-for.component';
     TdfFormComponent,
     MdfComponent,
     NgifComponent,
-    NgForComponent
+    NgForComponent,
+    StudententryComponent,
+    StudentviewComponent
 
   ],
     imports: [
