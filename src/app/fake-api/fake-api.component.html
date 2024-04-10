@@ -1,0 +1,14 @@
+<h1><input type="button" (click)="display()" value="load data"></h1>
+<hr/>
+<table class="table table-primary">
+  <tr>
+    <th> User Id </th> <th> Id</th> <th>title</th> <th>Body</th>
+  </tr>
+  <tr *ngFor="let post of this.fakeModelarray">
+    <td>{{post.userId}}</td>
+    <td>{{post.id}}</td>
+    <td>{{post.title}}</td>
+    <td>{{post.body}}</td>
+
+  </tr>
+</table>

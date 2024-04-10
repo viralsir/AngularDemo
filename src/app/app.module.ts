@@ -14,6 +14,8 @@ import { NgifComponent } from './ngif/ngif.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { StudententryComponent } from './studententry/studententry.component';
 import { StudentviewComponent } from './studentview/studentview.component';
+import {HttpClientModule} from "@angular/common/http";
+import { FakeApiComponent } from './fake-api/fake-api.component';
 
 
 @NgModule({
@@ -29,13 +31,15 @@ import { StudentviewComponent } from './studentview/studentview.component';
     NgifComponent,
     NgForComponent,
     StudententryComponent,
-    StudentviewComponent
+    StudentviewComponent,
+    FakeApiComponent
 
   ],
     imports: [
         BrowserModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]
